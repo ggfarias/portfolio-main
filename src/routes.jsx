@@ -5,6 +5,7 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
+import PageNotFound from './pages/NotFound';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
           <Route path='/projects' element={<Projects />}/>
           <Route path='/contact' element={<Contact />}/>
 
-          <Route path="*" element={<div>Página não encontrada</div>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
