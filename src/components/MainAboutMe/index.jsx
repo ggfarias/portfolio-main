@@ -1,7 +1,6 @@
 
 import styled from 'styled-components';
 import profilePicture from '../../assets/img-portfolio.jpeg'
-// import TransitionsModal from './Modal';
 
 
 const StylesMainAboutMe = styled.div`
@@ -77,69 +76,15 @@ const StylesMainAboutMe = styled.div`
     }
 `
 
-const StylesModal = styled.div`
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-    .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-    }
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    .close:hover, .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-`
-
 
 const MainAboutMe = () => {
-
-    // var modal = document.getElementById("stacks-modal");
-    // var btn = document.getElementById("button-open-modal");
-    // var span = document.getElementsByClassName("close")[0];
-
-
     return(
         <StylesMainAboutMe>
             <div className="page-content">
                 <div className="main-container">
                     <section className="photo-container">
                         <img src={profilePicture} alt="personal picture" className='personal-photo' />
-                        <button id='button-open-modal' onClick={() => open.StylesModal}>Check my Stacks</button>
-                            <StylesModal>
-                                <div id='stacks-modal' className='modal'>
-                                    <span class="close" onClick={() => close()}>&times;</span>
-                                    <div className='modal-content'>
-                                        <h3>Stack 1</h3>
-                                        <p>I have experience with this stack</p>
-                                    </div>
-                                </div>
-                            </StylesModal>
-                            
-
-
-
-                        {/* <TransitionsModal /> */}
+                        <button>Check my Stacks</button>
                     </section>
 
                     <section className="text-content">
