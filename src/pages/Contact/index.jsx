@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ContactContainer from "../../components/ContactContainer";
 
 const StylesContact = styled.div`
     h1, h3 {
@@ -9,10 +10,9 @@ const StylesContact = styled.div`
 
 const Contact = () => {
     return(
-        <StylesContact>
-            <h1>Under maintenance!</h1>
-            <h3>Please try again later.</h3>
-        </StylesContact>
+        <>
+            <ContactContainer />
+        </>
     )
 }
 
